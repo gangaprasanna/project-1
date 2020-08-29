@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2,h3 {
+    font-family: 'Raleway' , sans-serif;
+    font-weight: 700;
+}
+/* Header */
+
+#header{
+    background-image: url(../img/img1.jpg);
+    background-size: cover;
+    min-height: 30rem;
+}
+
+a.btn-outline-light:hover {
+    color: black !important;
+}
+
+#header .nav-link {
+    color: white !important;
+}
+
+.hero-title {
+    font-weight: 700;
+}
+
+.hero-caption {
+    min-height: 25rem;
+}
+
+.bg-success {
+    background-color: #00b30c !important;
+}
+
+/* Blog */
+
+@media(min-width:1200px) {
+    #blog .container{
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 768px){
+    #blog .col-md-5 {
+        height: 300px;
+    }
+    .img-fluid {
+        height: 300px;
+    }
+    #blog .col-md-7 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        height: 300px;
+    }
+    .lead .a:hover{
+        color: #00b30c !important;
+    }
+    .lead {
+        margin-left: 2rem;
+    }
+}
+
+.a-text h2::after {
+    display: block;
+    height: 2px;
+    content: "";
+    width: 100px;
+    background-color: teal;
+    margin: auto;
+    margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+    #icons .container{
+        max-width: 800px;
+    }
+}
+
+/* Icons */
+
+.features {
+    overflow: hidden;
+    padding-bottom: 30px;
+    height: calc(auto + 15px);
+}
+
+.features p{
+    opacity: 0;
+    padding-top: 15px;
+    transform: all .3s ease;
+}
+
+.features h6::before{
+    content: '';
+    display: block;
+    margin: 5px auto 10px auto;
+    height: 2px;
+    width: 30px;
+    background-color: #00b30c;
+    transition: all .3s ease;
+}
+
+.features:hover h6::before{
+    width: 90px;
+}
+
+.features:hover p {
+    display: block;
+    opacity: 1;
+    padding-top:7px;
+    color: #999;
+}
+
+.features h6{
+    font-weight: 200;
+    font-size: 1.4rem;
+}
+
+/* office image */
+
+#office{
+    background-image: url(../img/img4.jpg);
+    background-size: cover;
+    height: 400px;
+}
+
+.main-title {
+    font-weight: 700;
+}
+
+.main-caption {
+    min-height: 10rem;
+}
+
+/* Pricing table */
+
+.pricingTable{
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 40px 40px 70px 70px;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable:hover{ box-shadow: 0 0 20px -5px rgba(0,0,0, 0.9); }
+.pricingTable .pricingTable-header{
+    background: #e7e8ea;
+    padding: 25px 0 0;
+}
+.pricingTable .price-value{
+    color: #86878B;
+    font-weight: 900;
+    margin: 0 0 15px;
+}
+.pricingTable .price-value .amount{
+    font-size: 45px;
+    line-height: 40px;
+    display: block;
+}
+.pricingTable .price-value .duration{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+}
+.pricingTable .title{
+    color: #fff;
+    background: #f76b0e;
+    font-size: 33px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 18px 10px 15px;
+    margin: 0 -8px;
+    border: 8px solid #fff;
+    border-bottom: none;
+    border-radius: 170px 170px 0 0 / 70px 70px 0 0;
+}
+.pricingTable .content-list{
+    background: #E7E8EA;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.pricingTable .content-list li{
+    color: #86878B;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 5px;
+}
+
+.pricingTable .pricingTable-signup{
+    background: #f76b0e;
+    padding: 17px 20px 23px;
+}
+.pricingTable .pricingTable-signup a{
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable .pricingTable-signup a:hover{
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.pricingTable.blue .title,
+.pricingTable.blue .pricingTable-signup{
+    background: #3867d6;
+}
+.pricingTable.green .title,
+.pricingTable.green .pricingTable-signup{
+    background: #0fb9b1;
+}
+
+/* Blog2 */
+
+@media(min-width:1200px) {
+    #blog2 .container{
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 768px){
+    #blog2 .col-md-5 {
+        height: 300px;
+    }
+    .img-fluid {
+        height: 300px;
+    }
+    #blog2 .col-md-7 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        height: 300px;
+    }
+    .lead .a:hover{
+        color: #00b30c !important;
+    }
+}
+
+/* Carousel */
+
+#profile{
+    background-image: url(../img/img5.jpg);
+    background-size: cover;
+    height: 400px;
+}
+
+.main-title {
+    font-weight: 700;
+}
+
+.main-caption {
+    min-height: 10rem;
+}
+
+.main-caption h1::after{
+    content: '';
+    display: block;
+    margin: 5px auto 10px auto;
+    height: 2px;
+    width: 70px;
+    background-color: white;
+    transition: all .3s ease;
+}
+
+.main-caption:hover h1::after{
+    width: 60px;
+}
+
+/* Testimonial */
+
+.testimonial {
+    height: 70px;
+    width: 400px;
+}
+
+@media (min-width: 768px){
+   .profile-fluid {
+       height: 100px;
+       width: 100px;
+    }
+}
+
+/* Gallery */
+
+#gallery .b-text h2::after {
+    display: block;
+    height: 2px;
+    content: "";
+    width: 100px;
+    background-color: teal;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/*  */
+
+@media(min-width:1200px) {
+    #gallery .container{
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 768px){
+    #gallery .col-md-4 {
+        height: 300px;
+    }
+    .img-fluid {
+        height: 300px;
+    }
+    #gallery .col-md-8 {
+        height: 300px;
+    }
+    .img-2 {
+        height: 300px;
+        width: 513px;
+    }
+}
+
+/*  */
+@media(min-width:1200px) {
+    #message .container{
+        max-width: 800px;
+    }
+}
+
+#message .col-md-6 h1::after {
+    display: block;
+    height: 2px;
+    content: "";
+    width: 100px;
+    background-color: teal;
+    margin: 10px auto 30px 0px;
+}
+
+@media(min-width: 1200px){
+    #map .container {
+        max-width: 1000px;
+    }
+    .routemap {
+        height: 400px;
+        width: 1000px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
